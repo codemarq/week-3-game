@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Hangman Game</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<!-- Latest compiled and minified CSS -->
+  <meta charset="utf-8">
+	<title>Archer Hangman Game</title>
+	
+  <!-- reset css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
+	<!-- Optional Bootstrap theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="http://bootswatch.com/slate/bootstrap.min.css">
+  <!-- Bootswatch 'Slate' theme -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://bootswatch.com/slate/bootstrap.min.css"> -->
 
+  <!-- Bootswatch Superhero theme -->
+  <link rel="stylesheet" type="text/css" href="http://bootswatch.com/superhero/bootstrap.min.css">
+
+  <!-- My css mods -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- link to game scripts 'hangman.js' -->
+  <script type="text/javascript" src="assets/scripts/hangman.js"></script>
 </head>
 <body>
-<!-- ## Option Two: Hangman Game (Moderate - Recommended)
-
-2. Choose a theme for your game! In the demo, we picked an 80s theme: 80s questions, 80s sound and an 80s aesthetic. You can choose any subject for your theme, though, so be creative!
-
-3. Use key events to listen for the letters that your players will type.
-
-4. Display the following on the page:
-
-  * Press any key to get started!
-
-  * Wins: (# of times user guessed the word correctly).
-
-    * If the word is `madonna`, display it like this when the game starts: `_ _ _ _ _ _ _`.
-
-    * As the user guesses the correct letters, reveal them: `m a d o _  _ a`.
-
-  * Number of Guesses Remaining: (# of guesses remaining for the user).
-
-  * Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
-
-5. After the user wins/loses the game should automatically choose another word and make the user play it.
+<!-- 
 
 ##### Hangman Game Bonuses
 
@@ -47,6 +37,26 @@
   * Don't forget to place your global variables and functions above your object.
     * Remember: global variables, then objects, then calls.
   * Definitely talk with a TA or your instructor if you get tripped up during this challenge. -->
+
+<!--   4. Display the following on the page:
+
+  * Press any key to get started!
+
+  * Wins: (# of times user guessed the word correctly).
+ -->
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Archer Hangman</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <h2>Press any key to play!</h2>
+    <h3 id="wins">Wins: 0</h3>
+    <div id="word"><h3>_ _ _ _ _ _ _</h3></div>
+    <div id="guessesRemaining"><h3>Number of Guesses Remaining: 5</h3></div>
   <footer>&copy; Copyright 2016 John-Mike Marquardt</footer>
 </body>
 </html>
