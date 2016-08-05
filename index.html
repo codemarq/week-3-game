@@ -54,7 +54,7 @@
   
   <!-- make main content section a bout 90% size or 10 columns -->
   <section class = 'row'>
-    <div class='col-md-10 col-xs-12'> 
+    <div class='col-md-12 col-xs-12'> 
     <div class="jumbotron">
       <h1>Archer Hangman</h1>
       <h2>Press any key to play!</h2>
@@ -63,14 +63,27 @@
         <h3></h3>
       </div>
       <div id="guessesRemaining">
-        <h3>Number of Guesses Remaining: 5</h3>
+       
       </div>
       <div id="guessedLetters"></div>
       <p>example p text as a placeholder</p>
     </div>
     </div>
   </section>
-  
+  <script type="text/javascript">
+    document.onkeyup = function(event) {
+      var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+      checkAnswer(userGuess);
+      guessedLetters(userGuess);
+      console.log(guesses);
+      console.log(answerArray);
+      document.getElementById("wins").innerHTML='<h3>Wins: </h3>' + wins;
+      document.getElementById("guessesRemaining").innerHTML=answerArray;
+      document.getElementById("guessesRemaining").innerHTML='<h3>Number of Guesses Remaining: </h3>' + guessesRemaining;
+      document.getElementById("guessedLetters").innerHTML=guesses;
+    }
+  </script>
+
   <!-- create a sticky footer -->
   <footer class='footer'>
     <!-- <nav class="navbar navbar-default navbar-fixed-bottom"> -->
