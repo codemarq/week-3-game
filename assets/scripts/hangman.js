@@ -54,6 +54,12 @@
 		main game logic
 	*/
 	var checkAnswer = function (letter) {
+		// check to see if guess is in answer-decrement guesses if guess not in answer
+		var index = answerArray.indexOf(letter);
+		if (index === -1 ) {
+			guessesRemaining--;
+		}
+
 		for (var i = 0; i < answerArray.length; i++) {
 			var index = answerArray.indexOf(letter);
 			if (index !== -1) {
@@ -61,7 +67,6 @@
 				answerArray[index] = "-";
 			}
 		}
-		guessesRemaining--;
 	}
 
 	var guessedLetters = function (letter) {
@@ -69,11 +74,16 @@
 			var index = guesses.indexOf(letter);
 			if (index == -1) {
 				guesses.push(letter);
+
 			}
 		}
-	}
+		// reset game
+		if (guessesRemaining == 0) {
+			guesses = [];
+			guessesRemaining = 5;
+		}
 
-	// run game loop with user guess
+	
 
 	// replace html with # of wins
 
@@ -85,9 +95,4 @@
 	// replace html with guessed letters
 
 	// play sound and load image on win or loss and display anwser
-
-	// reset game
-	if (guessesRemaining == 0) {
-		guesses = [];
-		guessesRemaining = 5;
 	}

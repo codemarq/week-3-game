@@ -57,30 +57,31 @@
     <div class='col-md-12 col-xs-12'> 
     <div class="jumbotron">
       <h1>Archer Hangman</h1>
-      <h2>Press any key to play!</h2>
-      <h3 id="wins">Wins: 0</h3>
-      <div id="word">
-        <h3></h3>
+      <div id="Press">
+        <h2>Press any letter to guess!</h2>
       </div>
-      <div id="guessesRemaining">
-       
-      </div>
-      <div id="guessedLetters"></div>
-      <p>example p text as a placeholder</p>
+      <h2 id="wins">Wins: 0</h2>
+      <h1 id="word"></h1>
+      <h2 id="guessesRemaining"></h2>
+      <h3 id="guessedLetters"></h3>
     </div>
     </div>
   </section>
   <script type="text/javascript">
     document.onkeyup = function(event) {
       var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+      
+      // run game loop with user guess
       checkAnswer(userGuess);
       guessedLetters(userGuess);
-      console.log(guesses);
-      console.log(answerArray);
+      
+      // replace html with # of Wins
       document.getElementById("wins").innerHTML='<h3>Wins: </h3>' + wins;
-      document.getElementById("guessesRemaining").innerHTML=answerArray;
+      
+      // replace html with word
+      document.getElementById("word").innerHTML=displayedAnswer.join('  ');
       document.getElementById("guessesRemaining").innerHTML='<h3>Number of Guesses Remaining: </h3>' + guessesRemaining;
-      document.getElementById("guessedLetters").innerHTML=guesses;
+      document.getElementById("guessedLetters").innerHTML='Guessed Letters: ' + guesses;
     }
   </script>
 

@@ -42,3 +42,7 @@ footer {
  h3 {
  	font-family: Baveuse;
  }
+
+ #word {
+ 	letter-spacing: 10;
+ }
