@@ -1,4 +1,4 @@
-@font-face { font-family: 'Archer'; src: url('../assets/fonts/baveuse.ttf'); } 
+@font-face { font-family: 'Baveuse'; src: url('../fonts/baveuse.ttf'); } 
 
 body {
 	background-image: url('../images/sterling_archer_plain_white_stencil_by_heinpold-d5v0yaa.png');
@@ -8,7 +8,7 @@ body {
 	background-color: #4E5D6C;
 	color: #ffffff;
 	font-weight: bold;
-	font-family: 'Archer';
+	font-family: Baveuse;
 }
 
 /*header { 
@@ -31,3 +31,14 @@ footer {
     background-color: #333333;
     color: #ffffff;
 }
+ h1 {
+ 	font-family: Baveuse;
+ }
+
+ h2 {
+ 	font-family: Baveuse;
+ }
+
+ h3 {
+ 	font-family: Baveuse;
+ }
