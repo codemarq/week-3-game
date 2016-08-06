@@ -62,7 +62,7 @@ var computerChoices = [
 		lose: '../week-3-game/assets/sounds/CherylCarol/needhelpNoShit.wav'
 	},
 	cyril = {
-		name: 'cyil',
+		name: 'cyril',
 		image: '../week-3-game/assets/images/cyril.jpg',
 		win: '../week-3-game/assets/sounds/CyrilFiggis/hard2explain.wav',
 		lose: '../week-3-game/assets/sounds/CyrilFiggis/betterInHead.wav'
