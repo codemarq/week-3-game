@@ -39,7 +39,7 @@ var computerChoices = [
 	},
 	poovey = {
 		name: 'poovey',
-		image: '../week-3-game/assets/images/pam-poovey.jpg',
+		image: '../week-3-game/assets/images/pam-poovey.png',
 		win: '../week-3-game/assets/sounds/PamPoovey/bearballs.wav',
 		lose: '../week-3-game/assets/sounds/PamPoovey/internets.wav'
 	},
