@@ -23,65 +23,71 @@
   <script type="text/javascript" src="assets/scripts/hangman.js"></script>
 </head>
 <body>
-<!-- 
-
-##### Hangman Game Bonuses
-
-1. Play a sound or song when the user guesses their word correctly, like in our demo.
-2. Write some stylish CSS rules to make a design that fits your game's theme.
-3. **HARD MODE:** Organize your game code as an object, except for the key events to get the letter guessed. This will be a challenge if you haven't coded with JavaScript before, but we encourage anyone already familiar with the language to try this out.
-  * Save your whole game and it's properties in an object.
-  * Save any of your game's functions as methods, and call them underneath your object declaration using event listeners.
-  * Don't forget to place your global variables and functions above your object.
-    * Remember: global variables, then objects, then calls.
-  * Definitely talk with a TA or your instructor if you get tripped up during this challenge. -->
-
-<!--   4. Display the following on the page:
-
-  * Press any key to get started!
-
-  * Wins: (# of times user guessed the word correctly).
- -->
   <header>
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"></a>
-        </div>
-      </div>
+          <h1>Archer Hangman</h1>
     </nav>
   </header>
   
   <!-- make main content section a bout 90% size or 10 columns -->
-  <section class = 'row'>
-    <div class='col-md-12 col-xs-12'> 
-    <div class="jumbotron">
-      <h1>Archer Hangman</h1>
-      <div id="Press">
-        <h2>Press any letter to guess!</h2>
+  <section class = 'container'>
+    <div class="row">
+      <div class='col-md-12 col-xs-12'> 
+        <div class="jumbotron">
+            <h2>Press any letter to guess!</h2>
+           
+           <div class="row">
+              <div class='col-md-6 col-xs-6'>
+                <h2 id="wins">Wins: 0</h2>
+                <h2 id="losses">Losses: 0</h2>
+                <h2 id="guessesRemaining">Guesses Remaining: 5</h2>
+              </div>
+              <div class="col-xs-6 col-md-6">
+               <!--  <a href="#" class="thumbnail"> -->
+                  <img id ='thumbnail' src="assets/images/archer_2009-show.jpg" alt="?"
+                  class="img-rounded img-responsive" >
+                <!-- </a> -->
+              </div>
+              <div class='col-md-4 col-xs-4'>
+                
+              </div>
+            </div>
+          <div class='row'><h1 id="word"></h1></div>
+          <div class='row'><h3>Guessed Letters:</h3></div>
+          <div class="row"><h3 id="guessedLetters"></h3></div>
+        </div>
       </div>
-      <h2 id="wins">Wins: 0</h2>
-      <h1 id="word"></h1>
-      <h2 id="guessesRemaining"></h2>
-      <h3 id="guessedLetters"></h3>
-    </div>
     </div>
   </section>
+  <audio>
+    <source id='theme' src='../week-3-game/assets/sounds/archer-theme-song.wav' type="audio/mpeg" preload='true'>
+  </audio>
   <script type="text/javascript">
+    /*  Use key events to listen for the letters that your players will 
+    type. When the user presses the key it records the keypress and then sets it to userguess
+    */
     document.onkeyup = function(event) {
       var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
       
       // run game loop with user guess
-      checkAnswer(userGuess);
-      guessedLetters(userGuess);
+      // checkAnswer(userGuess);
+      // guessedLetters(userGuess);
+      game(userGuess);
       
       // replace html with # of Wins
       document.getElementById("wins").innerHTML='<h3>Wins: </h3>' + wins;
-      
+      document.getElementById("losses").innerHTML='<h3>Losses: </h3>' + losses;
+
       // replace html with word
       document.getElementById("word").innerHTML=displayedAnswer.join('  ');
-      document.getElementById("guessesRemaining").innerHTML='<h3>Number of Guesses Remaining: </h3>' + guessesRemaining;
-      document.getElementById("guessedLetters").innerHTML='Guessed Letters: ' + guesses;
+      
+
+      // replace html with guesses remaining
+      document.getElementById("guessesRemaining").innerHTML='Guesses Remaining: ' + guessesRemaining;
+      
+
+      // replace html with guessed letters
+      document.getElementById("guessedLetters").innerHTML=guesses.join('   ');
     }
   </script>
 
