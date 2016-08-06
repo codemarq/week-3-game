@@ -4,80 +4,80 @@ var computerChoices = [
 	archer = {
 		name: 'archer',
 		image: '../assets/images/Sterling-Archer-428x580.jpg',
-		win: '../week-3-game/assets/sounds/Sterling/thats-how-you-get-ants.wav',
-		lose: '../week-3-game/assets/sounds/Sterling/readXMen.wav'
+		win: '../assets/sounds/Sterling/thats-how-you-get-ants.wav',
+		lose: '../assets/sounds/Sterling/readXMen.wav'
 	}, 
 	lana = {
 		name: 'lana',
-		image: '../week-3-game/assets/images/lanakane.jpg',
-		win: '../week-3-game/assets/sounds/Lana/nope.wav',
-		lose: '../week-3-game/assets/sounds/Lana/wordsFailedMe.wav'
+		image: '../assets/images/lanakane.jpg',
+		win: '../assets/sounds/Lana/nope.wav',
+		lose: '../assets/sounds/Lana/wordsFailedMe.wav'
 	}, 
 	malory = {
 		name: 'malory',
-		image: '../week-3-game/assets/images/Malory.jpg',
-		win: '../week-3-game/assets/sounds/Malory/crackwhoreRed.wav',
-		lose: '../week-3-game/assets/sounds/Malory/dumbStupid.wav'
+		image: '../assets/images/Malory.jpg',
+		win: '../assets/sounds/Malory/crackwhoreRed.wav',
+		lose: '../assets/sounds/Malory/dumbStupid.wav'
 	},
 	duchess = {
 		name: 'duchess',
-		image: '../week-3-game/assets/images/archer_head_transparent_290_401.png',
-		win: '../week-3-game/assets/sounds/Sterling/analyzeData.wav',
-		lose: '../week-3-game/assets/sounds/Sterling/hogsOfWar.wav'
+		image: '../assets/images/archer_head_transparent_290_401.png',
+		win: '../assets/sounds/Sterling/analyzeData.wav',
+		lose: '../assets/sounds/Sterling/hogsOfWar.wav'
 	},
 	danger = {
 		name: 'dangerzone',
-		image: '../week-3-game/assets/images/danger.jpg',
-		win: '../week-3-game/assets/sounds/Sterling/dangerZone.wav',
-		lose: '../week-3-game/assets/sounds/Sterling/lanadangerzone.wav'
+		image: '../assets/images/danger.jpg',
+		win: '../assets/sounds/Sterling/dangerZone.wav',
+		lose: '../assets/sounds/Sterling/lanadangerzone.wav'
 	},
 	phrasing = {
 		name: 'phrasing',
-		image: '../week-3-game/assets/images/phrasing.jpg',
-		win: '../week-3-game/assets/sounds/Sterling/hey-phrasing.wav',
-		lose: '../week-3-game/assets/sounds/Sterling/so-were-just-done-with-phrasing.wav'
+		image: '../assets/images/phrasing.jpg',
+		win: '../assets/sounds/Sterling/hey-phrasing.wav',
+		lose: '../assets/sounds/Sterling/so-were-just-done-with-phrasing.wav'
 	},
 	poovey = {
 		name: 'poovey',
-		image: '../week-3-game/assets/images/pam-poovey.png',
-		win: '../week-3-game/assets/sounds/PamPoovey/bearballs.wav',
-		lose: '../week-3-game/assets/sounds/PamPoovey/internets.wav'
+		image: '../assets/images/pam-poovey.png',
+		win: '../assets/sounds/PamPoovey/bearballs.wav',
+		lose: '../assets/sounds/PamPoovey/internets.wav'
 	},
 	krieger = {
 		name: 'krieger',
-		image: '../week-3-game/assets/images/krieger.jpg',
-		win: '../week-3-game/assets/sounds/Krieger/totallyGoingTo.wav',
-		lose: '../week-3-game/assets/sounds/Krieger/letsPlayGod.wav'
+		image: '../assets/images/krieger.jpg',
+		win: '../assets/sounds/Krieger/totallyGoingTo.wav',
+		lose: '../assets/sounds/Krieger/letsPlayGod.wav'
 	},
 	cheryl = {
 		name: 'cheryl',
-		image: '../week-3-game/assets/images/cheryl.jpg',
-		win: '../week-3-game/assets/sounds/CherylCarol/surrounded-by-idiots.wav',
-		lose: '../week-3-game/assets/sounds/CherylCarol/pkPowers.wav'
+		image: '../assets/images/cheryl.jpg',
+		win: '../assets/sounds/CherylCarol/surrounded-by-idiots.wav',
+		lose: '../assets/sounds/CherylCarol/pkPowers.wav'
 	},
 	carol = {
 		name: 'carol',
-		image: '../week-3-game/assets/images/carol.jpg',
-		win: '../week-3-game/assets/sounds/CherylCarol/nameaplace.wav',
-		lose: '../week-3-game/assets/sounds/CherylCarol/needhelpNoShit.wav'
+		image: '../assets/images/carol.jpg',
+		win: '../assets/sounds/CherylCarol/nameaplace.wav',
+		lose: '../assets/sounds/CherylCarol/needhelpNoShit.wav'
 	},
 	cyril = {
 		name: 'cyril',
-		image: '../week-3-game/assets/images/cyril.jpg',
-		win: '../week-3-game/assets/sounds/CyrilFiggis/hard2explain.wav',
-		lose: '../week-3-game/assets/sounds/CyrilFiggis/betterInHead.wav'
+		image: '../assets/images/cyril.jpg',
+		win: '../assets/sounds/CyrilFiggis/hard2explain.wav',
+		lose: '../assets/sounds/CyrilFiggis/betterInHead.wav'
 	},
 	supervisor = {
 		name: 'supervisor',
-		image: '../week-3-game/assets/images/supervisor.jpg',
-		win: '../week-3-game/assets/sounds/CherylCarol/not_my_supervisor.wav',
-		lose: '../week-3-game/assets/sounds/CherylCarol/not_my_supervisor.wav'
+		image: '../assets/images/supervisor.jpg',
+		win: '../assets/sounds/CherylCarol/not_my_supervisor.wav',
+		lose: '../assets/sounds/CherylCarol/not_my_supervisor.wav'
 	},
 	zima = {
 		name: 'zima',
-		image: '../week-3-game/assets/images/zima.jpg',
-		win: '../week-3-game/assets/sounds/Sterling/zima.wav',
-		lose: '../week-3-game/assets/sounds/Sterling/missZima.wav'
+		image: '../assets/images/zima.jpg',
+		win: '../assets/sounds/Sterling/zima.wav',
+		lose: '../assets/sounds/Sterling/missZima.wav'
 	}
 ];
 
