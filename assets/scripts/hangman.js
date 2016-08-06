@@ -3,7 +3,7 @@
 var computerChoices = [
 	archer = {
 		name: 'archer',
-		image: '../week-3-game/assets/images/Sterling-Archer-428x580.jpg',
+		image: '../assets/images/Sterling-Archer-428x580.jpg',
 		win: '../week-3-game/assets/sounds/Sterling/thats-how-you-get-ants.wav',
 		lose: '../week-3-game/assets/sounds/Sterling/readXMen.wav'
 	}, 
@@ -129,7 +129,7 @@ var checkAnswer = function (letter) {
 	// check to see if guess is in answer-decrement guesses if guess not in answer
 	var index = answerArray.indexOf(letter);
 
-	if (index === -1 ) {
+	if (index == -1 ) {
 		guessesRemaining--;
 	}
 
@@ -162,6 +162,7 @@ var resetGame = function () {
 	pushAnswer();
 	displayedAnswer= [];
 	pushArray(displayedAnswer, '_');
+
 }
 
 // Game Over function
@@ -171,14 +172,17 @@ var gameOver = function() {
 		playAudio(answer.lose);
 		document.getElementById('thumbnail').src=answer.image;
 		losses ++;
-		resetGame();
+		// resetGame();
+		gameState=false;
 	}
 	// win case
 	else if (guessesRemaining >= 0 && (displayedAnswer.indexOf('_') == -1)) {
 		playAudio(answer.win);
 		document.getElementById('thumbnail').src=answer.image;
 		wins ++;
-		resetGame();
+		// resetGame();
+		gameState=false;
+
 	}
 }
 
@@ -190,6 +194,7 @@ var game = function (key) {
 		gameOver();
 	}
 	else {
+		resetGame();
 		gameState = true;
 		checkAnswer(key);
 		guessedLetters(key);
