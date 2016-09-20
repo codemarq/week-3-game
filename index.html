@@ -4,23 +4,20 @@
   <meta charset="utf-8">
   <title>Archer Hangman Game</title>
 	
-  <!-- mobile responsive viewports -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- mobile responsive viewports -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- reset css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<!-- reset css -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Bootswatch 'Cosmo' theme -->
-  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+  	<!-- Bootswatch 'Cosmo' theme -->
+ 	 <link rel="stylesheet" type="text/css" href="https://bootswatch.com/cosmo/bootstrap.min.css">
 
-  <!-- My css mods -->
+  	<!-- My css mods -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-  <!-- link to game scripts 'hangman.js' -->
-  <script type="text/javascript" src="assets/scripts/hangman.js"></script>
 </head>
 <body>
   <header>
@@ -60,7 +57,7 @@
     </div>
   </section>
   <audio>
-    <source id='theme' src='../week-3-game/assets/sounds/archer-theme-song.wav' type="audio/mpeg" preload='true'>
+    <source id='theme' src='assets/sounds/archer-theme-song.wav' type="audio/mpeg" preload='true'>
   </audio>
   <script type="text/javascript">
     /*  Use key events to listen for the letters that your players will 
@@ -90,7 +87,8 @@
       document.getElementById("guessedLetters").innerHTML=guesses.join('   ');
     }
   </script>
-
+  <!-- link to game scripts 'hangman.js' -->
+  <script type="text/javascript" src="assets/scripts/hangman.js"></script>
   <!-- create a sticky footer -->
   <footer class='footer'>
     <!-- <nav class="navbar navbar-default navbar-fixed-bottom"> -->
