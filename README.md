@@ -20,4 +20,4 @@ Hangman game, using HTML, CSS and JavaScript only. This was completed in the thi
 
 
 ## Author
-John-Mike Marquardt @codemarq
+&copy; 2016 John-Mike Marquardt [Github](https://github.com/codemarq) | [jmmarquardt.com](https://jmmarquardt.com) | [LinkedIn](https://www.linkedin.com/in/jmmarquardt)
